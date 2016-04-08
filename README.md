@@ -1,7 +1,8 @@
 # Sidekiq the Door Open
 
-Skill level: Advanced
-Time limit: 1-2 hours
+**Skill level**: Advanced
+
+**Time limit**: 1-2 hours
 
 [Sidekiq] is the tool of choice for processing background jobs in Ruby. It's incredibly powerful for having a task run later or in the background. For example, if a git branch is pushed, it will email everyone, that there's in update. Git doesn't wait until everyone received the email before it let's the user know that the push was successful. Instead it runs that process in the background.
 
@@ -11,25 +12,25 @@ Awesome right? Well slow down there are a few small caveats to using such a powe
 
 Here we have a Garage Door Simulator/State machine. Currently, we can only run the machine in memory. But what happens if we introduce another garage door opener? Well that's your task!
 
-1) We need some sort of state persistence. The easiest possible solution for this is having the state be written to a file. Complete the pending specs and have the door read/write state to a file.
+To assist in understanding the garage door's states, here's a quick diagram
+
+![](https://github.com/paradime/sidekiq-the-door-open/blob/master/state-machine.png)
+
+- 1) We need some sort of state persistence. The easiest possible solution for this is having the state be written to a file. Complete the pending specs and have the door read/write state to a file.
   - a) fill in the pending specs with your expectations
   - b) modify the Door to read/write to a given file
-2) Fill in the [RSpec-Sidekiq] tests marked with level 2
+- 2) Fill in the [RSpec-Sidekiq] tests marked with level 2
   - we'll expect that we only have 1 remote
   - add the job
-3) Fill in the specs marked with level 3
+- 3) Fill in the specs marked with level 3
   - these will have to do with errors and handling failures
-4) Create specs that should test thread safety (level 4)
+- 4) Create specs that should test thread safety (level 4)
 
 Useful links:
-
-[Railscast]
-
-[Thread safety]
-
-[Sidekiq testing]
-
-[DailyDrip tutorial]
+- [Railscast]
+- [Thread safety]
+- [Sidekiq testing]
+- [DailyDrip tutorial]
 
 Special Thanks:
 
