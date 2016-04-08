@@ -9,9 +9,9 @@ class Door
     cstopped: 'stopped_while_closing'
   }
 
-  def initialize(file='door.txt')
+  def initialize(file: 'door.txt', new_state: STATES[:open])
     @file = file
-    @state = STATES[:open]
+    @state = new_state
   end
 
   def push_button

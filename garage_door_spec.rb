@@ -1,9 +1,12 @@
-require 'pry'
 require 'rspec'
 require_relative './garage_door'
 
 describe Door do
-  it 'writes to a file'
+  describe 'writing to a file' do
+    #level 1
+    it 'saves state in a file'
+    it 'reads state from a file'
+  end
 
   let(:door) { described_class.new }
   describe '#push_button' do
