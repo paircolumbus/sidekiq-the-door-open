@@ -1,4 +1,4 @@
-# Sidekiq the Door Down
+# Sidekiq the Door Open
 
 [Sidekiq] is the tool of choice for processing background jobs in Ruby. It's incredibly powerful for having a task run later or in the background. For example, if a git branch is pushed, it will email everyone, that there's in update. Git doesn't wait until everyone received the email before it let's the user know that the push was successful. Instead it runs that process in the background.
 
