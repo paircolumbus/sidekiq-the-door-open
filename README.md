@@ -1,4 +1,4 @@
-# Sidekiq the Door Open
+# WIP Sidekiq the Door Open
 
 **Skill level**: Advanced
 
